@@ -1,0 +1,65 @@
+{
+  "name": "yliyun",
+  "version": "0.1.5",
+  "description": "a wrapper of fis to build seajs project",
+  "main": "yliyun.js",
+  "bin": {
+    "yliyun": "bin/yliyun"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yliyun-team/yli-cmd.git"
+  },
+  "keywords": [
+    "fis",
+    "angularjs",
+    "cmd",
+    "commonjs",
+    "modular",
+    "build",
+    "yliyun"
+  ],
+  "author": {
+    "name": "googleyufei"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fis": "~1.9.13",
+    "fis-lint-jshint": "0.0.9",
+    "fis-parser-coffee-script": "0.0.2",
+    "fis-parser-less": "0.1.1",
+    "fis-parser-utc": "0.0.2",
+    "fis-postpackager-modjs": "*",
+    "fis-postpackager-simple": "^0.0.23",
+    "fis-postprocessor-require-async": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/yliyun-team/yli-cmd/issues"
+  },
+  "gitHead": "d55398c719e0494dcdefd3533d0616ed1b386816",
+  "homepage": "https://github.com/yliyun-team/yli-cmd#readme",
+  "_id": "yliyun@0.1.5",
+  "_shasum": "5736c242f273ab8e08099b8a40df23f659714270",
+  "_from": "yliyun@*",
+  "_npmVersion": "2.10.1",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "googleyufei",
+    "email": "googleyufei@qq.com"
+  },
+  "dist": {
+    "shasum": "5736c242f273ab8e08099b8a40df23f659714270",
+    "tarball": "http://registry.npmjs.org/yliyun/-/yliyun-0.1.5.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "googleyufei，manbuzhiwu",
+      "email": "googleyufei@qq.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/yliyun/-/yliyun-0.1.5.tgz"
+}
