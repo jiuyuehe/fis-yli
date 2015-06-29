@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yliyun-team/yli-cmd.git"
+    "url": "https://github.com/jiuyuehe/fis-yli"
   },
   "keywords": [
     "fis",
@@ -23,7 +23,7 @@
     "yliyun"
   ],
   "author": {
-    "name": "googleyufei"
+    "name": "jiuyuehe"
   },
   "license": "MIT",
   "dependencies": {
@@ -37,29 +37,14 @@
     "fis-postprocessor-require-async": "*"
   },
   "bugs": {
-    "url": "https://github.com/yliyun-team/yli-cmd/issues"
+    "url": "https://github.com/jiuyuehe/fis-yli/issues"
   },
   "gitHead": "d55398c719e0494dcdefd3533d0616ed1b386816",
-  "homepage": "https://github.com/yliyun-team/yli-cmd#readme",
-  "_id": "yliyun@0.1.5",
-  "_shasum": "5736c242f273ab8e08099b8a40df23f659714270",
-  "_from": "yliyun@*",
-  "_npmVersion": "2.10.1",
-  "_nodeVersion": "0.12.4",
-  "_npmUser": {
-    "name": "googleyufei",
-    "email": "googleyufei@qq.com"
-  },
-  "dist": {
-    "shasum": "5736c242f273ab8e08099b8a40df23f659714270",
-    "tarball": "http://registry.npmjs.org/yliyun/-/yliyun-0.1.5.tgz"
-  },
+  "homepage": "https://github.com/jiuyuehe/fis-yli/issues#readme",
   "maintainers": [
     {
-      "name": "googleyufei，manbuzhiwu",
-      "email": "googleyufei@qq.com"
+      "name": "jiuyuehe",
+      "email": "lucene@foxmail.com"
     }
-  ],
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/yliyun/-/yliyun-0.1.5.tgz"
+  ]
 }
