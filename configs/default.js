@@ -5,14 +5,18 @@ fis.config.merge({
             //.tmpl后缀的文件使用fis-parser-utc插件编译
             tmpl: 'utc',
             //.coffee后缀的文件使用fis-parser-coffee-script插件编译
-            coffee: 'coffee-script',
+            //coffee: 'coffee-script',
             //.less后缀的文件使用fis-parser-less插件编译
             less: 'less'
         },
         postprocessor: {
             js: ['jswrapper', 'require-async']
         },
-        postpackager: 'modjs'
+        postpackager: 'modjs',
+
+        optimizer: {
+            js: ['ng-annotate']
+        }
     },
     settings: {
         parser: {
@@ -39,19 +43,19 @@ fis.config.merge({
 fis.config.merge({
     roadmap: {
         path: [
-            {
-                //一级同名组件，可以引用短路径，比如modules/jquery/juqery.js
-                //直接引用为var $ = require('jquery');
-                reg: /^\/requireLib\/([^\/]+)\/\1\.(js|coffee)$/i,
-                //是组件化的，会被jswrapper包装
-                isMod: true,
-                //id为文件夹名
-                id: '$1'
-            },
+            // {
+            //一级同名组件，可以引用短路径，比如modules/jquery/juqery.js
+            //直接引用为var $ = require('jquery');
+            //    reg: /^\/libs\/(.*)\/([^\/]+)\/\1\.(js)$/i,
+            //是组件化的，会被jswrapper包装
+            //    isMod: true,
+            //id为文件夹名
+            //    id: '$1'
+            //  },
 
             {
                 //modules目录下的其他文件
-                reg: /^\/requireLib\/(.*)\/([\w\-_\.]*)\.(js|coffee)$/i,
+                reg: /^\/libs\/(.*)\/([\w\-_\.]*)\.(js)$/i,
                 //是组件化的，会被jswrapper包装
                 isMod: true,
                 //id是去掉modules和.js后缀中间的部分
@@ -63,10 +67,10 @@ fis.config.merge({
                 reg: /^\/app\/(.*)\.(js|coffee)$/i,
                 //是组件化的，会被jswrapper包装
                 isMod: true,
+                isAngular: true,
                 //id是去掉modules和.js后缀中间的部分
                 id: '$1'
             },
-
             {
                 //.mixin.less后缀的文件
                 reg: /\.mixin\.less$/,
@@ -81,6 +85,15 @@ fis.config.merge({
                 //不要放到js资源表里
                 useMap: false
             },
+
+            {
+                reg: /\/pages\/(.*)\.html/i,
+                useMap: false,
+                useCache: false,
+                release: '/$1.html'
+            },
+
+
             {
                 //readme文件，不要发布
                 reg: /\/readme.md$/i,
@@ -135,5 +148,5 @@ fis.config.set('deploy.remote', {
 
 //打包配置
 fis.config.set('pack', {
-    'pkg/aio.js': ['modules/**.js', 'modules/**.coffee']
+    'pkg/aio.js': ['app/**.js', 'libs/**.js']
 });

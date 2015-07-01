@@ -1,6 +1,6 @@
 {
-  "name": "yliyun",
-  "version": "0.1.5",
+  "name": "fis-yli",
+  "version": "0.1.6",
   "description": "a wrapper of fis to build seajs project",
   "main": "yliyun.js",
   "bin": {
